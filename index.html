@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原稿用紙ライター</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <div id="settings-toggle">⚙</div>
+    <div id="clock" class="hidden"></div>
+    <div id="paper-container"></div>
+    <div id="toolbar">
+        <button id="save">保存する</button>
+        <button id="load">ロード</button>
+        <button id="exportPDF">共有(PDF)</button>
+        <button id="instruction">説明書</button>
+    </div>
+    <input type="file" id="file-input" accept=".genkou,.nogen" class="hidden">
+    <div id="popup" class="hidden"></div>
+    <script src="js/app.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/encryption.js"></script>
+    <script src="js/pdf.js"></script>
+</body>
+</html>
